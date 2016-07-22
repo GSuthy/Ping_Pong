@@ -9,6 +9,7 @@ using namespace std;
 int main(int argc, char* argv[]){
   int option = 0;
   vector<Match*> games;
+  vector<Person*> people;
   while(option != 5) {
     cout << endl << "Menu" << endl << endl;
     cout << "Please choose an option:" << endl;
@@ -32,6 +33,7 @@ int main(int argc, char* argv[]){
       cout << "Please enter a name: ";
       cin >> name;
       Person* p = new Person(name);
+      people.push_back(p);
     }
     else if(option == 3){
 

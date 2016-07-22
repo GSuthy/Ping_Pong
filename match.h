@@ -27,4 +27,6 @@ public:
   virtual string getWinner();
 
   virtual string getLoser();
+
+  virtual void print();
 };

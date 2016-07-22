@@ -6,13 +6,7 @@ Match::Match(string date, string name1, string name2, int score1, int score2){
   player2 = name2;
   result1 = score1;
   result2 = score2;
-}
 
-Match::~Match() {
-
-}
-
-void Match::setWinner(){
   if(result1 > result2){
     winner = player1;
     loser = player2;
@@ -22,10 +16,20 @@ void Match::setWinner(){
     loser = player1;
   }
 }
+
+Match::~Match() {
+
+}
+
 string Match::getWinner(){
   return winner;
 }
 
 string Match::getLoser(){
   return loser;
+}
+
+void Match::print(){
+  cout << "On " << date << ", " << winner << " beat " << loser
+  << " with a score of " << result1 << " - " << result2 << endl;
 }
