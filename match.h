@@ -16,6 +16,8 @@ protected:
   string 2name;
   int 1score;
   int 2score;
+  string winner;
+  string loser;
 
 public:
   Match(string name1, string name2, int score1, int score2);
@@ -26,4 +28,9 @@ public:
 
   virtual int getScores();
   virtual void setScores(int score);
+
+  virtual void setWinner();
+  virtual void getWinner();
+
+  virtual void getLoser();
 };
