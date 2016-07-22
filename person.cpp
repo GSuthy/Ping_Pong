@@ -9,12 +9,18 @@ Person::Person(string name){
 	  return wins;
   }
   
-  void setWins(){
-	  wins++;
+  void setWins(int winData){
+	  wins = winData;
   }
   int getLosses(){
 	  return losses;
   }
-  void setLosses(){
+  void setLosses(int lossData){
+	  losses = lossData;
+  }
+  void incrementWin(){
+	  wins++;
+  }
+  void incrementLoss(){
 	  losses++;
   }

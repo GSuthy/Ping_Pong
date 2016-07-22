@@ -13,6 +13,8 @@ class Person : public match
   void setWins();
   int getLosses();
   void setLosses();
+  void incrementWin(int winData);
+  void incrementLoss(int lossData);
 
   Person(name);
 };
