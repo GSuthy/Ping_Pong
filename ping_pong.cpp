@@ -68,8 +68,8 @@ int main(int argc, char* argv[]){
 
     }
     else if(option == 5){
-      for(int i = 0; i < games.length(); i++){
-        games[i].print();
+      for(int i = 0; i < games.size(); i++){
+        games[i]->print();
       }
     }
     else{
