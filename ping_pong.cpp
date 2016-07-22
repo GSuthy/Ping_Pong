@@ -25,7 +25,7 @@ int main(int argc, char* argv[]){
       cin.ignore(numeric_limits<streamsize>max(), '\n');
       cout << "Invalid input. Please enter a number 1-5" << endl;
     }*/
-    else if(option == 1){
+    if(option == 1){
 
     }
     else if(option == 2){
