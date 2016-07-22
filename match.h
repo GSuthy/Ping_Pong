@@ -12,7 +12,10 @@ class Match {
 
 protected:
   string date;
-  int scores;
+  string 1name;
+  string 2name;
+  int 1score;
+  int 2score;
 
 public:
   Match(string name1, string name2, int score1, int score2);

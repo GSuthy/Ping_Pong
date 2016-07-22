@@ -1,7 +1,10 @@
 #include "match.h"
 
 Match::Match(string name1, string name2, int score1, int score2){
-  //scores = score;
+  1name = name1;
+  2name = name2;
+  1score = score1;
+  2score = score2;
 }
 
 Match::~Match() {
