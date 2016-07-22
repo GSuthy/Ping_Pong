@@ -8,6 +8,7 @@ using namespace std;
 
 int main(int argc, char* argv[]){
   int option = 0;
+  vector <match> games;
   while(option != 5) {
     cout << "Menu" << endl << endl;
     cout << "Please choose an option:" << endl;
@@ -36,6 +37,31 @@ int main(int argc, char* argv[]){
 
     }
     else if(option == 4){
+      string date;
+      string Player1;
+      string Player2;
+      int score1;
+      int score2;
+
+      cout << "Who is playing?" << endl;
+      cout << "Player1: ";
+      cin >> Player1;
+
+      cout << "Player2: ";
+      cin >> Player2;
+
+      cout << "What day did they play:" << endl;
+      cout << "Date: ";
+      cin >> date;
+
+      cout << Player1 << "/'s score: ";
+      cin >> score1;
+
+      cout << Player2 << "/'s score: ";
+      cin >> score2;
+
+      Match* m = new Match(Player1, Player2, score1, score2);
+      games.push_back(m);
 
     }
     else if(option == 5){
