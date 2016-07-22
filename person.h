@@ -20,8 +20,10 @@ public:
 
   virtual int getWins();
   virtual void setWins(int winData);
-  virtual int getLosses(int lossData);
-  virtual void setLosses();
+
+  virtual int getLosses();
+  virtual void setLosses(int lossData);
+
   virtual void incrementWin(int winData);
   virtual void incrementLoss(int lossData);
 

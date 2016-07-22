@@ -10,20 +10,20 @@ Person::~Person(){
 }
 
  int Person::getWins(){
-	 return 0;
+	 return wins;
  }
  void Person::setWins(int winData){
-
+	 wins = winData;
  }
- int Person::getLosses(int lossData){
-	 return 0;
+ int Person::getLosses(){
+	 return losses;
  }
- void Person::setLosses(){
-
+ void Person::setLosses(int lossData){
+	 losses = lossData;
  }
  void Person::incrementWin(int winData){
-
+	 wins++;
  }
  void Person::incrementLoss(int lossData){
-
+	 losses++;
  }
