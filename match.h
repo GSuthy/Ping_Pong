@@ -12,25 +12,19 @@ class Match {
 
 protected:
   string date;
-  string 1name;
-  string 2name;
-  int 1score;
-  int 2score;
+  string player1;
+  string player2;
+  int result1;
+  int result2;
   string winner;
   string loser;
 
 public:
-  Match(string name1, string name2, int score1, int score2);
+  Match(string date, string name1, string name2, int score1, int score2);
   virtual ~Match();
 
-  virtual string getDate();
-  virtual void setDate(string match_date);
-
-  virtual int getScores();
-  virtual void setScores(int score);
-
   virtual void setWinner();
-  virtual void getWinner();
+  virtual string getWinner();
 
-  virtual void getLoser();
+  virtual string getLoser();
 };

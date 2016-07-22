@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int argc, char* argv[]){
   int option = 0;
-  vector <match> games;
+  vector<Match*> games;
   while(option != 5) {
     cout << "Menu" << endl << endl;
     cout << "Please choose an option:" << endl;
@@ -60,7 +60,7 @@ int main(int argc, char* argv[]){
       cout << Player2 << "/'s score: ";
       cin >> score2;
 
-      Match* m = new Match(Player1, Player2, score1, score2);
+      Match* m = new Match(date, Player1, Player2, score1, score2);
       games.push_back(m);
 
     }
