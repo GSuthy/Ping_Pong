@@ -10,14 +10,15 @@ int main(int argc, char* argv[]){
   int option = 0;
   vector<Match*> games;
   vector<Person*> people;
-  while(option != 5) {
+  while(option != 6) {
     cout << endl << "Menu" << endl << endl;
     cout << "Please choose an option:" << endl;
     cout << "1) Show current players" << endl;
     cout << "2) Add a player" << endl;
     cout << "3) Remove a player" << endl;
     cout << "4) Add a game" << endl;
-    cout << "5) Exit and save" << endl << endl;
+    cout << "5) Show games played" << endl;
+    cout << "6) Exit and save" << endl << endl;
     cout << "Option: ";
     cin >> option;
     /*if(cin.fail()){
@@ -67,7 +68,9 @@ int main(int argc, char* argv[]){
 
     }
     else if(option == 5){
-
+      for(int i = 0; i < games.length(); i++){
+        games[i].print();
+      }
     }
     else{
       cout << "Invalid input. Please enter a number 1-5" << endl;
