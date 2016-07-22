@@ -1,6 +1,7 @@
+#pagma once
 #include "match.h"
 
-class Person
+class Person : public match
 {
   private:
   int wins;
