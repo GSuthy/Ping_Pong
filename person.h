@@ -1,4 +1,4 @@
-#pragmaagma once
+#pragma once
 #include "match.h"
 
 class Person : public Match
