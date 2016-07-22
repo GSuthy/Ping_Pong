@@ -27,3 +27,9 @@ Person::~Person(){
  void Person::incrementLoss(){
 	 losses++;
  }
+
+ void Person::print(){
+   cout << name << endl;
+	 cout << "    wins: " << wins << endl;
+	 cout << "    losses: " << losses << endl;
+ }

@@ -27,5 +27,7 @@ public:
   virtual void incrementWin();
   virtual void incrementLoss();
 
+  virtual void print();
+
 
 };

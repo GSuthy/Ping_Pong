@@ -18,12 +18,13 @@ protected:
   int result2;
   string winner;
   string loser;
+  int winnerScore;
+  int loserScore;
 
 public:
   Match(string date, string name1, string name2, int score1, int score2);
   virtual ~Match();
 
-  virtual void setWinner();
   virtual string getWinner();
 
   virtual string getLoser();

@@ -27,7 +27,10 @@ int main(int argc, char* argv[]){
       cout << "Invalid input. Please enter a number 1-5" << endl;
     }*/
     if(option == 1){
-
+      cout << endl;
+      for(int i = 0; i < people.size(); i++){
+        people[i]->print();
+      }
     }
     else if(option == 2){
       string name;
