@@ -1,7 +1,13 @@
 #pragma once
-#include "match.h"
 
-class Person : public Match
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+class Person
 {
   private:
   int wins;
@@ -9,6 +15,9 @@ class Person : public Match
   string name;
 
   public:
+  Person(string name);
+  virtual ~Person();
+
   int getWins();
   void setWins();
   int getLosses();
@@ -16,5 +25,5 @@ class Person : public Match
   void incrementWin(int winData);
   void incrementLoss(int lossData);
 
-  Person(string name);
+
 };

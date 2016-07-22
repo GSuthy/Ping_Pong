@@ -1,14 +1,17 @@
-
+#include "person.h"
 
 Person::Person(string name){
 	this->name = name;
 	wins = 0;
 	losses = 0;
 }
+Person::~Person(){
+
+}
   int getWins(){
 	  return wins;
   }
-  
+
   void setWins(int winData){
 	  wins = winData;
   }
