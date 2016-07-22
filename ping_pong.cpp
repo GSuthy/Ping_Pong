@@ -20,7 +20,11 @@ int main(int argc, char* argv[]){
     cout << "5) Exit and save" << endl << endl;
     cout << "Option: ";
     cin >> option;
-    if(option == 1){
+    if(cin.fail()){
+      cin.clear();
+      cout << "Invalid input. Please enter a number 1-5" << endl;
+    }
+    else if(option == 1){
 
     }
     else if(option == 2){
