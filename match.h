@@ -15,8 +15,8 @@ protected:
 
 public:
   Match(string match_date, int score);
-  virutal ~Match();
-  
+  virtual ~Match();
+
   virtual string getDate();
   virtual string setDate(string match_date);
   virtual int getScores();
