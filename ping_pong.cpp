@@ -32,8 +32,8 @@ int main(int argc, char* argv[]){
       string name;
       cout << "Please enter a name: ";
       cin >> name;
-      Person n(name);
-      //Person n = new Person(name);
+      //Person n(name);
+      Person* n = new Person(name);
     }
     else if(option == 3){
 
