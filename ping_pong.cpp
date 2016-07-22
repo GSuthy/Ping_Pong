@@ -72,6 +72,9 @@ int main(int argc, char* argv[]){
         games[i]->print();
       }
     }
+    else if(option == 6){
+
+    }
     else{
       cout << "Invalid input. Please enter a number 1-5" << endl;
     }
