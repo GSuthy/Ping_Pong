@@ -1,7 +1,7 @@
-#pagma once
+#pragmaagma once
 #include "match.h"
 
-class Person : public match
+class Person : public Match
 {
   private:
   int wins;
@@ -16,5 +16,5 @@ class Person : public match
   void incrementWin(int winData);
   void incrementLoss(int lossData);
 
-  Person(name);
+  Person(string name);
 };
