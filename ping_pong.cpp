@@ -29,7 +29,10 @@ int main(int argc, char* argv[]){
 
     }
     else if(option == 2){
-
+      string name;
+      cout << "Please enter a name: ";
+      cin >> name;
+      Person n = new Person(name);
     }
     else if(option == 3){
 
