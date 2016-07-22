@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -32,8 +30,7 @@ int main(int argc, char* argv[]){
       string name;
       cout << "Please enter a name: ";
       cin >> name;
-      //Person n(name);
-      Person* n = new Person(name);
+      Person* p = new Person(name);
     }
     else if(option == 3){
 

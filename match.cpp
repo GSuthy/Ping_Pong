@@ -13,12 +13,12 @@ string Match::getDate(){
   return date;
 }
 string Match::setDate(string match_date){
-
+ return "hi";
 }
 
 int Match::getScores(){
   return scores;
 }
 int Match::setScores(int score){
-
+  return 0;
 }

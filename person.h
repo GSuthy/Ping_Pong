@@ -9,21 +9,21 @@ using namespace std;
 
 class Person
 {
-  private:
+protected:
   int wins;
   int losses;
   string name;
 
-  public:
+public:
   Person(string name);
   virtual ~Person();
 
-  int getWins();
-  void setWins();
-  int getLosses();
-  void setLosses();
-  void incrementWin(int winData);
-  void incrementLoss(int lossData);
+  virtual int getWins();
+  virtual void setWins(int winData);
+  virtual int getLosses(int lossData);
+  virtual void setLosses();
+  virtual void incrementWin(int winData);
+  virtual void incrementLoss(int lossData);
 
 
 };

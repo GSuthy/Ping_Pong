@@ -8,22 +8,22 @@ Person::Person(string name){
 Person::~Person(){
 
 }
-  int getWins(){
-	  return wins;
-  }
 
-  void setWins(int winData){
-	  wins = winData;
-  }
-  int getLosses(){
-	  return losses;
-  }
-  void setLosses(int lossData){
-	  losses = lossData;
-  }
-  void incrementWin(){
-	  wins++;
-  }
-  void incrementLoss(){
-	  losses++;
-  }
+ int Person::getWins(){
+	 return 0;
+ }
+ void Person::setWins(int winData){
+
+ }
+ int Person::getLosses(int lossData){
+	 return 0;
+ }
+ void Person::setLosses(){
+
+ }
+ void Person::incrementWin(int winData){
+
+ }
+ void Person::incrementLoss(int lossData){
+
+ }
