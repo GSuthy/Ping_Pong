@@ -28,6 +28,10 @@ Person::~Person(){
 	 losses++;
  }
 
+ string Person::getName(){
+	 return name;
+ }
+
  void Person::print(){
    cout << name << endl;
 	 cout << "    wins: " << wins << endl;

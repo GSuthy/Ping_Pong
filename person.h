@@ -18,6 +18,8 @@ public:
   Person(string name);
   virtual ~Person();
 
+  virtual string getName();
+
   virtual int getWins();
   virtual void setWins(int winData);
 

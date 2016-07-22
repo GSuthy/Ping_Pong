@@ -6,6 +6,15 @@
 
 using namespace std;
 
+int find(vector<Person*> people, string name){
+  for(int i = 0; i < people.size(); i++){
+    if(people[i]->getName() == name){
+      return i;
+    }
+  }
+  return -1;
+}
+
 int main(int argc, char* argv[]){
   int option = 0;
   vector<Match*> games;
@@ -26,6 +35,7 @@ int main(int argc, char* argv[]){
       cin.ignore(numeric_limits<streamsize>max(), '\n');
       cout << "Invalid input. Please enter a number 1-5" << endl;
     }*/
+    cin.clear();
     if(option == 1){
       cout << endl;
       for(int i = 0; i < people.size(); i++){
@@ -40,7 +50,16 @@ int main(int argc, char* argv[]){
       people.push_back(p);
     }
     else if(option == 3){
-
+      cout << "What name would you like to remove: ";
+      string name;
+      cin >> name;
+      int temp = find(people, name);
+      if(temp == -1){
+        cout << "That player does not exist" << endl;
+      }
+      else {
+        people.erase(people.begin() + temp);
+      }
     }
     else if(option == 4){
       string date;
@@ -65,6 +84,15 @@ int main(int argc, char* argv[]){
 
       cout << Player2 << "'s score: ";
       cin >> score2;
+
+      if(score1 > score2){
+        people[find(people, Player1)]->incrementWin();
+        people[find(people, Player2)]->incrementLoss();
+      }
+      else if(score1 < score2) {
+        people[find(people, Player1)]->incrementLoss();
+        people[find(people, Player2)]->incrementWin();
+      }
 
       Match* m = new Match(date, Player1, Player2, score1, score2);
       games.push_back(m);
