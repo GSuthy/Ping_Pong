@@ -72,8 +72,18 @@ int main(int argc, char* argv[]){
       cout << "Player1: ";
       cin >> Player1;
 
+      int temp = find(people, Player1);
+      if(temp == -1){
+        cout << "Player does not exist in sytem, please add them." << endl;
+      }
+
       cout << "Player2: ";
       cin >> Player2;
+
+      int temp = find(people, Player2);
+      if(temp == -1){
+        cout << "Player does not exist in sytem, please add them." << endl;
+      }
 
       cout << "What day did they play:" << endl;
       cout << "Date: ";
