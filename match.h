@@ -18,7 +18,8 @@ public:
   virtual ~Match();
 
   virtual string getDate();
-  virtual string setDate(string match_date);
+  virtual void setDate(string match_date);
+
   virtual int getScores();
-  virtual int setScores(int score);
+  virtual void setScores(int score);
 };
