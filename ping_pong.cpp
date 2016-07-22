@@ -20,11 +20,11 @@ int main(int argc, char* argv[]){
     cout << "5) Exit and save" << endl << endl;
     cout << "Option: ";
     cin >> option;
-    if(cin.fail()){
+    /*if(cin.fail()){
       cin.clear();
       cin.ignore(numeric_limits<streamsize>max(), '\n');
       cout << "Invalid input. Please enter a number 1-5" << endl;
-    }
+    }*/
     else if(option == 1){
 
     }
@@ -32,7 +32,8 @@ int main(int argc, char* argv[]){
       string name;
       cout << "Please enter a name: ";
       cin >> name;
-      Person n = new Person(name);
+      Person n(name);
+      //Person n = new Person(name);
     }
     else if(option == 3){
 
