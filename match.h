@@ -4,6 +4,7 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include "person.h"
 
 using namespace std;
 
@@ -14,7 +15,7 @@ protected:
   int scores;
 
 public:
-  Match(string match_date, int score);
+  Match(string name1, string name2, int score1, int score2);
   virtual ~Match();
 
   virtual string getDate();

@@ -21,9 +21,9 @@ Person::~Person(){
  void Person::setLosses(int lossData){
 	 losses = lossData;
  }
- void Person::incrementWin(int winData){
+ void Person::incrementWin(){
 	 wins++;
  }
- void Person::incrementLoss(int lossData){
+ void Person::incrementLoss(){
 	 losses++;
  }

@@ -1,8 +1,7 @@
 #include "match.h"
 
-Match::Match(string match_date, int score){
-  date = match_date;
-  scores = score;
+Match::Match(string name1, string name2, int score1, int score2){
+  //scores = score;
 }
 
 Match::~Match() {

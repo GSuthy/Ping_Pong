@@ -24,8 +24,8 @@ public:
   virtual int getLosses();
   virtual void setLosses(int lossData);
 
-  virtual void incrementWin(int winData);
-  virtual void incrementLoss(int lossData);
+  virtual void incrementWin();
+  virtual void incrementLoss();
 
 
 };
