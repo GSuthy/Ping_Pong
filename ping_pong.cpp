@@ -30,12 +30,6 @@ int main(int argc, char* argv[]){
     cout << "6) Exit and save" << endl << endl;
     cout << "Option: ";
     cin >> option;
-    /*if(cin.fail()){
-      cin.clear();
-      cin.ignore(numeric_limits<streamsize>max(), '\n');
-      cout << "Invalid input. Please enter a number 1-5" << endl;
-    }*/
-    cin.clear();
     if(option == 1){
       cout << endl;
       for(int i = 0; i < people.size(); i++){
