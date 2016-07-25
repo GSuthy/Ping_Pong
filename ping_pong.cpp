@@ -80,8 +80,8 @@ int main(int argc, char* argv[]){
       cout << "Player2: ";
       cin >> Player2;
 
-      int temp = find(people, Player2);
-      if(temp == -1){
+      int temp2 = find(people, Player2);
+      if(temp2 == -1){
         cout << "Player does not exist in sytem, please add them." << endl;
       }
 
